@@ -1,17 +1,21 @@
 {
   "dependencies": {
+    "codemirror": "^5.65.16",
     "react": "^18.2.0",
+    "react-codemirror2": "^7.3.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   },
   "name": "codeeditor",
   "version": "1.0.0",
   "description": "CodeEditor using ReactJS",
   "main": "App.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
