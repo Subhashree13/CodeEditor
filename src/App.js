@@ -1,10 +1,11 @@
 import React,{useState, useEffect} from "react";
 import ReactDOM from "react-dom";
 import Editor from "./components/Editor";
+import useLocalStorage from "./utils/useLocalStorage";
 const App = ()=>{
-const [html, setHTML] = useState('');
-const [css, setCSS] = useState('');
-const [js, setJS] = useState('');
+const [html, setHTML] = useLocalStorage('html','');
+const [css, setCSS] = useLocalStorage('css','');
+const [js, setJS] = useLocalStorage('js','');
 const [editorOutput, setEditorOutput] = useState('');
 useEffect(()=>{
     let timeout = setTimeout(()=>{
